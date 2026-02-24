@@ -55,3 +55,11 @@ body {}
 /* ================================================footer */
 #wrap footer {}
 #wrap footer p {}
+/* ================================================main w1200+p70 */
+#wrap main .container_layout {
+    width: 1220px; margin:0 auto; padding: 70px 0;
+}
+/* 반복구조 레이아웃 공통부여 */
+#wrap main .container_layout h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 30px;}
+#wrap main .container_layout h1+p {line-height: 1.7; font-size: 0.94rem; margin: 0 0 30px color: #555; padding: 0 0 30px;
+}

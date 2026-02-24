@@ -182,67 +182,51 @@
 }
 #wrap main #hero_bnr #reservation_form > p #search_btn img {margin-right: 5px;}
 /* =====================메인 */
-#wrap main .yanglim {
+/* ------------------------------------호랑가시나무언덕 소개 */
+#wrap main #yanglim {
     background-color: #F5F5F5;
-    padding: 70px 0;
-    width: 100%;
 }
-#wrap main .yanglim .y_info {
-    width: 1220px;
-    margin: 0 auto;
-}
-#wrap main .yanglim .y_info h2,
-#wrap main .local .local_info h2 {
-    font-size: 1.50rem; font-weight: 500;
-}
-#wrap main .yanglim .y_info h2 {}
-#wrap main .yanglim .y_info p,
-#wrap main .local .local_info p {
+#wrap main #yanglim .container_layout {}
+#wrap main #yanglim .container_layout h1 {}
+#wrap main #yanglim .container_layout p,
+#wrap main #local .container_layout p {
     font-size: 0.94rem;
     line-height: 170%;
 }
-#wrap main .yanglim .y_info p {
-    padding: 30px 0;
-}
-#wrap main .yanglim .y_info img {}
-#wrap main .local {
-    background-color: #fff;
-    width: 1220px;
-    padding: 70px 0;
-    margin: 0 auto;
-}
-#wrap main .local .local_info {
-}
-#wrap main .local .local_info h2 {}
-#wrap main .local .local_info p {
-    padding: 30px 0;
-}
-#wrap main .local .local_place {
-    width: clac (((290px + 20) * 4) - 20);
+#wrap main #yanglim .container_layout p {}
+#wrap main #yanglim .container_layout img {}
+/* ------------------------------------주변관광지 소개 */
+#wrap main #local {}
+#wrap main #local .container_layout {}
+#wrap main #local .container_layout h1 {}
+#wrap main #local .container_layout p {}
+#wrap main #local .local_place {
     display: flex; flex-flow: row wrap;
     justify-content: space-between;
-    gap: 10px;
+    width: calc((100% / 4 ) - 60) ;
 }
-#wrap main .local .local_place li {
-    display: flex; flex-flow: column wrap;
+#wrap main #local .local_place li {
+    display: flex; flex-flow: column nowrap;
+}
+#wrap main #local .local_place li .local_img {
+    width: 290px; height: 250px;
     overflow: hidden;
-    gap: 10px;
 }
-#wrap main .local .local_place li img:hover {
-    transform: scale(1.3);
+#wrap main #local .local_place li .local_img img:hover {width: 130%;}
+#wrap main #local .local_place li .local_img img {width: 100%;}
+#wrap main #local .local_place li em {
+font-size: 1.13rem; font-weight: 500;
 }
-#wrap main .local .local_place li img {
-    height: 250px;
-}
-#wrap main .local .local_place li em {
-    font-size: 1.13rem;
-    font-weight: 500;
-}
-#wrap main .local .local_link {
-    font-size: 0.94rem;
-    text-align: center;
+#wrap main #local .local_link {
     display: block;
-    margin-top: 80px;
+    width: max-content;
+    border-bottom: 1px #000 solid;
+    margin: 0 auto;
 }
-#wrap main .local .local_link u {
+/*     text-decoration: underline; 밑줄과 글자사이 여백불가능 */
 }
+/* ------------------------------------객실 및 예약안내 */
+#wrap main #room {}
+#wrap main #room .container_layout {}
+/* ------------------------------------오시는길 */
+/* ------------------------------------footer */
