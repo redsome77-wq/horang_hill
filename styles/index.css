@@ -207,6 +207,7 @@
 }
 #wrap main #local .local_place li {
     display: flex; flex-flow: column nowrap;
+    gap: 10px;
 }
 #wrap main #local .local_place li .local_img {
     width: 290px; height: 250px;
@@ -222,11 +223,62 @@ font-size: 1.13rem; font-weight: 500;
     width: max-content;
     border-bottom: 1px #000 solid;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 /*     text-decoration: underline; 밑줄과 글자사이 여백불가능 */
-}
 /* ------------------------------------객실 및 예약안내 */
-#wrap main #room {}
-#wrap main #room .container_layout {}
+#wrap main #room {
+    background-color: #F5F5F5;
+}
+#wrap main #room .container_layout {
+}
+#wrap main #room .container_layout h1 {}
+#wrap main #room .container_layout p {}
+#wrap main #room .container_layout .room_list {
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: calc((100% / 4 ) - 60) ;
+}
+#wrap main #room .container_layout .room_list li {
+    display: flex; flex-flow: column nowrap;
+    gap: 10px;
+}
+#wrap main #room .container_layout .room_list li:first-child img {
+    width: 500px;
+}
+#wrap main #room .container_layout .room_list li img {
+    width: 220px; overflow: hidden;
+}
+#wrap main #room .container_layout .room_list li em {
+    font-size: 1.13rem; font-weight: 500;
+}
+#wrap main #room .container_layout .room_list li p {
+    font-size: 0.88rem; font-weight: 400; line-height: 1.7;
+}
+#wrap main #room .resa_link {
+    display: block;
+    width: max-content;
+    border-bottom: 1px #000 solid;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
 /* ------------------------------------오시는길 */
+#wrap main #map {
+    background-color: chartreuse;
+}
+#wrap main #map .container_layout {}
+#wrap main #map .container_layout h1 {}
+#wrap main #map .container_layout p {}
+#wrap main #map .map_link {}
+#wrap main #map .map_link img {}
+#wrap main #map #transport {}
+#wrap main #map #transport .bus {}
+#wrap main #map #transport .bus dd {}
+#wrap main #map #transport .subway {}
+#wrap main #map #transport .subway dd {}
 /* ------------------------------------footer */
+#wrap footer {
+    background-color: coral;
+}
+#wrap footer address {}
