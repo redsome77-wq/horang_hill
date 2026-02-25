@@ -196,7 +196,9 @@
 #wrap main #yanglim .container_layout p {}
 #wrap main #yanglim .container_layout img {}
 /* ------------------------------------주변관광지 소개 */
-#wrap main #local {}
+#wrap main #local {
+    background-color: #fff;
+}
 #wrap main #local .container_layout {}
 #wrap main #local .container_layout h1 {}
 #wrap main #local .container_layout p {}
@@ -218,12 +220,12 @@
 #wrap main #local .local_place li em {
 font-size: 1.13rem; font-weight: 500;
 }
-#wrap main #local .local_link {
+#wrap main #local .link_container .local_link {}
+#wrap main #local .link_container .local_link {
     display: block;
     width: max-content;
     border-bottom: 1px #000 solid;
     margin: 0 auto;
-    margin-bottom: 70px;
 }
 /*     text-decoration: underline; 밑줄과 글자사이 여백불가능 */
 /* ------------------------------------객실 및 예약안내 */
@@ -256,29 +258,54 @@ font-size: 1.13rem; font-weight: 500;
 #wrap main #room .container_layout .room_list li p {
     font-size: 0.88rem; font-weight: 400; line-height: 1.7;
 }
-#wrap main #room .resa_link {
+#wrap main #room .link_container {}
+#wrap main #room .link_container .resa_link {
     display: block;
     width: max-content;
     border-bottom: 1px #000 solid;
     margin: 0 auto;
-    margin-bottom: 70px;
 }
 /* ------------------------------------오시는길 */
 #wrap main #map {
-    background-color: chartreuse;
+    background-color: #fff;
 }
-#wrap main #map .container_layout {}
+#wrap main #map .container_layout {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 70px 0 0 0;
+}
 #wrap main #map .container_layout h1 {}
 #wrap main #map .container_layout p {}
-#wrap main #map .map_link {}
-#wrap main #map .map_link img {}
-#wrap main #map #transport {}
-#wrap main #map #transport .bus {}
-#wrap main #map #transport .bus dd {}
-#wrap main #map #transport .subway {}
-#wrap main #map #transport .subway dd {}
+#wrap main #map #map_zone {
+    width: 1220px; margin:0 auto;
+}
+#wrap main #map #map_zone .map_link {}
+#wrap main #map #map_zone .map_link img {}
+#wrap main #map #map_zone .transport {
+    padding: 30px 0 70px 0;
+}
+#wrap main #map #map_zone .transport .bus,
+#wrap main #map #map_zone .transport .subway {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
+#wrap main #map #map_zone .transport .bus {}
+#wrap main #map #map_zone .transport .subway {
+    margin-top: 30px;
+}
+#wrap main #map #map_zone .transport dd {
+    font-size: 0.938rem;
+    line-height: 1.8;
+}
 /* ------------------------------------footer */
 #wrap footer {
-    background-color: coral;
+    background-color: #000;
+    padding: 70px 0;
 }
-#wrap footer address {}
+#wrap footer address {
+    color: #fff;
+    font-size: 0.8125rem;
+    line-height: 2.0;
+    width: 1220px; margin:0 auto;
+}

@@ -52,6 +52,7 @@ body {}
     color: #ddd; text-align: center;
     display: block; line-height: 46px;
 }
+#wrap main .link_container {padding-bottom: 70px;}
 /* ================================================footer */
 #wrap footer {}
 #wrap footer p {}
