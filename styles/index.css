@@ -179,8 +179,14 @@
     width: 74px; height: 40px;
     border-radius: 8px;
     font-size: 0.88rem;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
-#wrap main #hero_bnr #reservation_form > p #search_btn img {margin-right: 5px;}
+#wrap main #hero_bnr #reservation_form > p #search_btn img {
+    margin-right: 5px;
+    width: 12px; height: 12px;
+}
 /* =====================메인 */
 /* ------------------------------------호랑가시나무언덕 소개 */
 #wrap main #yanglim {
