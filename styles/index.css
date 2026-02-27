@@ -209,9 +209,8 @@
 #wrap main #local .container_layout h1 {}
 #wrap main #local .container_layout p {}
 #wrap main #local .local_place {
-    display: flex; flex-flow: row wrap;
+    display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    width: calc((100% / 4 ) - 60) ;
 }
 #wrap main #local .local_place li {
     display: flex; flex-flow: column nowrap;
@@ -243,20 +242,28 @@ font-size: 1.13rem; font-weight: 500;
 #wrap main #room .container_layout h1 {}
 #wrap main #room .container_layout p {}
 #wrap main #room .container_layout .room_list {
-    display: flex; flex-flow: row wrap;
+    display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
-    width: calc((100% / 4 ) - 60) ;
+    align-items:flex-start;
+    width: 1220px;
 }
 #wrap main #room .container_layout .room_list li {
     display: flex; flex-flow: column nowrap;
     gap: 10px;
+    width: calc((100% / 4) - (5px * 4) + 10px);
+}
+#wrap main #room .container_layout .room_list li:hover {
+    transform: scale(1.3);
+}
+#wrap main #room .container_layout .room_list li:first-child:hover {
+    transform: scale(1.3);
 }
 #wrap main #room .container_layout .room_list li:first-child img {
-    width: 500px;
+    height: 329.53px;
+}
+#wrap main #room .container_layout .room_list li:last-child img {
 }
 #wrap main #room .container_layout .room_list li img {
-    width: 220px; overflow: hidden;
 }
 #wrap main #room .container_layout .room_list li em {
     font-size: 1.13rem; font-weight: 500;
